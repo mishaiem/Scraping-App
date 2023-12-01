@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Scrapping_app" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/tealgreen</item>
-        <item name="colorPrimaryVariant">@color/tealgreen</item>
+        <item name="colorPrimary">@color/linearGreen</item>
+        <item name="colorPrimaryVariant">@color/linearGreen</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
