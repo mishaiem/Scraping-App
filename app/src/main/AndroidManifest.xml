@@ -14,14 +14,14 @@
         android:theme="@style/Theme.Scrapping_app"
         tools:targetApi="31">
         <activity
-            android:name=".SignupActivity"
+            android:name=".Screen.SignupActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".GetStartedActivity"
+            android:name=".Screen.GetStartedActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

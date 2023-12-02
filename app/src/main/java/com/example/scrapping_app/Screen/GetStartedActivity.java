@@ -11,6 +11,7 @@ import com.example.scrapping_app.R;
 
 public class GetStartedActivity extends AppCompatActivity {
     Button loginbtn;
+    Button signupbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,15 @@ public class GetStartedActivity extends AppCompatActivity {
                 finish();
             }
         });
+        signupbtn=findViewById(R.id.signupbtn);
+        signupbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(GetStartedActivity.this,SignupActivity.class));
+                finish();
+            }
+        });
+
     }
 
 }
