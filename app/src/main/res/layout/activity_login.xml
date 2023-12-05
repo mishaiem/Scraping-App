@@ -65,6 +65,9 @@
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:maxLength="40"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/linearGreen"
+                    android:drawableStart="@drawable/email"
                     android:hint="xxxx@gmail.com"
                     android:paddingVertical="10dp"/>
                 <TextView
@@ -79,26 +82,133 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="******"
+                    android:drawableTint="@color/linearGreen"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@drawable/eye"
                     android:inputType="textPassword"
                     android:maxLength="20"
                     android:paddingVertical="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp"
+                    >
+                    <CheckBox
+                        android:id="@+id/rememberme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember Me"
+                        android:textSize="12sp"
+                        android:buttonTint="@color/linearGreen"
+                        android:fontFamily="@font/poppins_regular" />
+                    <TextView
+                        android:id="@+id/forgotpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:textColor="@color/linearGreen"
+                        android:textAlignment="textEnd"
+                        android:buttonTint="@color/linearGreen"
+                        android:fontFamily="@font/poppins_regular"/>
 
+                </LinearLayout>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
-                    android:fontFamily="@font/poppins_bold"
+                    android:fontFamily="@font/poppins_regular"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textAllCaps="false"
                     android:backgroundTint="@color/primarygreen"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/button_shape"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or continue with"
+                android:layout_marginVertical="10dp"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/Grey"
+                />
+        </FrameLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center"
+           android:layout_marginVertical="10dp"
+
+           >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:layout_marginHorizontal="20dp"
+               android:src="@drawable/google"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_weight="1"
+               android:layout_marginHorizontal="20dp"
+               android:src="@drawable/facebook"
+               android:padding="10dp"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_weight="1"
+               android:layout_marginHorizontal="20dp"
+               android:src="@drawable/twitter"
+               android:padding="10dp"
+               />
+       </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account ?"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/Grey"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Sign Up "
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
+        android:textColor="@color/linearGreen"
+        />
+
+</LinearLayout>
     </LinearLayout>
-
-
 </FrameLayout>
