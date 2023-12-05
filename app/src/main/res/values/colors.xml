@@ -8,4 +8,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primarygreen">#1DB954</color>
     <color name="linearGreen">#038E4C</color>
+    <color name="Grey">#605E5E</color>
+
+
 </resources>
