@@ -62,7 +62,7 @@
                     android:textSize="17sp" />
 
                 <EditText
-                    android:id="@+id/name"
+                    android:id="@+id/nameInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="enter your name"
@@ -81,17 +81,18 @@
                     android:fontFamily="@font/poppins_regular"
                     android:text="Email"
                     android:textColor="@color/black"
-                    android:drawableStart="@drawable/envelope"
-                    android:drawableTint="@color/linearGreen"
                     android:drawablePadding="10dp"
                     android:textSize="17sp" />
 
                 <EditText
-                   android:id="@+id/email"
+                   android:id="@+id/emailInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="xxxx@gmail.com"
                     android:inputType="textEmailAddress"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/linearGreen"
+                    android:drawableStart="@drawable/email"
                     android:maxLength="40"
                     android:paddingVertical="10dp" />
 
@@ -105,12 +106,16 @@
                     android:textSize="17sp" />
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/passInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="******"
                     android:inputType="textPassword"
                     android:maxLength="20"
+                    android:drawableTint="@color/linearGreen"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:drawableEnd="@drawable/eye"
                     android:paddingVertical="10dp" />
 
                 <TextView
@@ -123,15 +128,19 @@
                     android:textSize="17sp" />
 
                 <EditText
-                    android:id="@+id/confirmpassword"
+                    android:id="@+id/confirmInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="******"
                     android:maxLength="20"
+                    android:drawableTint="@color/linearGreen"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:drawableEnd="@drawable/eye"
                     android:paddingVertical="10dp" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/signupbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -142,6 +151,35 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account? "
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/Grey"
+                        />
+                    <TextView
+                        android:id="@+id/loginInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/linearGreen"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
