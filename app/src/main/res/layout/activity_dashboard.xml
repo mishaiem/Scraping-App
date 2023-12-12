@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-<!--        row-->
+        <!--        row-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +50,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/tranparant"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/tranparant"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
                 >
 
             <LinearLayout
@@ -252,5 +266,40 @@
 </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:backgroundTint="@color/tranparant">-->
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:src="@drawable/fluentbook"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Catalog"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="@font/poppins_regular"/>-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    </LinearLayout>-->
 
 </FrameLayout>
