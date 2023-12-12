@@ -137,35 +137,119 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/tranparant">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center">
+             <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:orientation="vertical">
+             <ImageView
+              android:layout_width="60dp"
+                 android:layout_height="60dp"
+             android:src="@drawable/lock"/>
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/fluentbook"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catalog"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="center"/>
+             </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Catalog"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_regular"/>
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bag"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Balanja"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/group"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="droppint"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
 
+                        android:src="@drawable/truck"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
             </LinearLayout>
-
-            </LinearLayout>
-
 
         </androidx.cardview.widget.CardView>
 
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/tranparant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/testimage"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alimunm"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
