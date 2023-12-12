@@ -131,7 +131,7 @@ public class SignupActivity extends AppCompatActivity {
 
     public boolean nameValidation () {
         String input = nameInput.getText().toString().trim();
-        if (input.equals(" ")){
+        if (input.equals("")){
             nameInput.setError("Name is required");
             return false;
         }else if(input.length()<3){
@@ -146,7 +146,7 @@ public class SignupActivity extends AppCompatActivity {
     public boolean emailValidation () {
         String input = emailInput.getText().toString().trim();
         String pattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
-        if (input.equals(" ")){
+        if (input.equals("")){
             emailInput.setError("Email Address is required");
             return false;
         }else if(!input.matches(pattern)){
@@ -160,7 +160,7 @@ public class SignupActivity extends AppCompatActivity {
     }
     public boolean passValidation() {
         String input = passInput.getText().toString().trim();
-        if (input.equals(" ")){
+        if (input.equals("")){
             passInput.setError("Password is required");
             return false;
         }else if(input.length()<8){
@@ -175,7 +175,7 @@ public class SignupActivity extends AppCompatActivity {
     public boolean confirmValidation() {
         String input = confirmInput.getText().toString().trim();
         String input2 = passInput.getText().toString().trim();
-        if (input.equals(" ")){
+        if (input.equals("")){
             confirmInput.setError("confirm your Password!!!");
             return false;
         }else if(input.length()<8){
@@ -192,13 +192,13 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
     public void validation(){
-        boolean nameErr=false,emailErr = false,confirmErr= false ,passErr=false;
-        nameErr=nameValidation();
+        boolean nameErr = false,emailErr = false,confirmErr= false ,passErr=false;
+        nameErr= nameValidation();
         emailErr=emailValidation();
         passErr=passValidation();
         confirmErr=confirmValidation();
 
-        if((nameErr&& emailErr &&passErr && confirmErr)==true){
+        if((nameErr && emailErr && passErr && confirmErr)==true){
             Dialog loaddialog=new Dialog(SignupActivity.this);
             loaddialog.setContentView(R.layout.dialog_loading);
             loaddialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -221,12 +221,11 @@ public class SignupActivity extends AppCompatActivity {
                             alertdialog.getWindow().setGravity(Gravity.CENTER);
                             alertdialog.setCancelable(false);
                             alertdialog.setCanceledOnTouchOutside(false);
-
+                            alertdialog.show();
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
                                     alertdialog.dismiss();
-                                    SignupActivity.super.onBackPressed();
 
                                 }
                             },2000);
@@ -241,9 +240,10 @@ public class SignupActivity extends AppCompatActivity {
                             alertdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                             alertdialog.getWindow().setGravity(Gravity.CENTER);
                             alertdialog.setCancelable(false);
-                            TextView message = loaddialog.findViewById(R.id.message);
+                            TextView message = alertdialog.findViewById(R.id.message);
                             message.setText("Your account already exist");
                             alertdialog.setCanceledOnTouchOutside(false);
+                            alertdialog.show();
 
                             new Handler().postDelayed(new Runnable() {
                                 @Override

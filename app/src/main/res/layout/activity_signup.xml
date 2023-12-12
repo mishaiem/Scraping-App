@@ -105,6 +105,7 @@
                     android:textColor="@color/black"
                     android:textSize="17sp" />
 
+
                 <EditText
                     android:id="@+id/passInput"
                     android:layout_width="match_parent"
@@ -132,6 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="******"
+                    android:inputType="textPassword"
                     android:maxLength="20"
                     android:drawableTint="@color/linearGreen"
                     android:drawableStart="@drawable/lock"
