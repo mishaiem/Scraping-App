@@ -154,7 +154,7 @@ public class LoginActivity extends AppCompatActivity {
                             alertdialog.getWindow().setGravity(Gravity.CENTER);
                             alertdialog.setCancelable(false);
                             TextView message = alertdialog.findViewById(R.id.message);
-                            message.setText("Email Address is required!!!");
+                            message.setText("Email Address OR password is wrong!!!");
                             alertdialog.setCanceledOnTouchOutside(false);
                             alertdialog.show();
 
