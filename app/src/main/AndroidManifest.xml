@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Scrapping_app"
         tools:targetApi="31">
         <activity
+            android:name=".createActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegiterForm_Activity"
             android:exported="false" />
         <activity

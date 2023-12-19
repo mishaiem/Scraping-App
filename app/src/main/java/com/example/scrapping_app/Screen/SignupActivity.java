@@ -215,7 +215,7 @@ public class SignupActivity extends AppCompatActivity {
                         public void onSuccess(AuthResult authResult) {
                             loaddialog.dismiss();
                             Dialog alertdialog=new Dialog(SignupActivity.this);
-                            alertdialog.setContentView(R.layout.dialogue_success);
+                            alertdialog.setContentView(R.layout.dialog_success);
                             alertdialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                             alertdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                             alertdialog.getWindow().setGravity(Gravity.CENTER);
@@ -235,7 +235,7 @@ public class SignupActivity extends AppCompatActivity {
                         public void onFailure(@NonNull Exception e) {
                             loaddialog.dismiss();
                             Dialog alertdialog=new Dialog(SignupActivity.this);
-                            alertdialog.setContentView(R.layout.dialogue_success);
+                            alertdialog.setContentView(R.layout.dialog_success);
                             alertdialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                             alertdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                             alertdialog.getWindow().setGravity(Gravity.CENTER);
